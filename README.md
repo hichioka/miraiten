@@ -1,6 +1,6 @@
-開発環境
-html pug 使用
-css scss 使用
+開発環境・言語
+pug
+scss
 
 compile command
 gulp sass
@@ -20,3 +20,5 @@ dist 生成物の配布先フォルダ
 test テスト生成物の
 
 omponentについてはまた後で調べる
+
+コンパイル時のベンダープレフィックスの記述について、設定が必要なので調べる
