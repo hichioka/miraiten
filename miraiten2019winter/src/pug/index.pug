@@ -1,13 +1,31 @@
 doctype html
 html(lang="ja")
-  include head.pug
-  header
-    include hum_menu.pug
+  include _head.pug
   
   body
-    div.main_img: img(src="#" alt="未来展2019　ポスター")
-    h1 公立はこだて未来大学情報デザインコースの2年生の成果物
-    p 公立はこだて未来大学の情報デザインコース2年生が授業課題で制作した
+    div.top
+      include _slideshow.pug
+      div.top_head
+        img.miraiten_logo(src="../img/miraitenWin_logo1.png" alt="未来展2019タイトル")
+        p.top_text 公立はこだて未来大学の情報デザインコース2年生が授業課題で制作したプロダクトを展示及びプレゼンします。
+        
+    section.summry
+      div.main_width
+        h2.sub_title: a(href="about.html") 概要
+        dt 日時
+        dd 3日
+    section.place
+      div.main_width
+        div.pl_ume: include _umekiti_access.pug
+    section.place
+      div.main_width
+        div.pl_ben: include _bennten_access.pug
+        
+    section.top_contets
+      div.main_width
+        h2.sub_title: a(href="work.html") 展示会内容
+        p 公開プレゼンテーション
+        p 展示
 
-  include foot.pug
+  include _foot.pug
     

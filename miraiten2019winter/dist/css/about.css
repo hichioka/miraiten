@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.block{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: solid 1px #c0bfbf;
+  margin-bottom: 15pt;
+}
+@media screen and (max-width: 640px) {
+  .block{
+    width: 100%;
+  }
+}
+
+.under{
+  text-align: center;
+  position: relative;
+  width: 60%;
+}
+
+sub_title{
+  font-size: xx-large;
+  color:#d4a145;
+  width:200px;
+}
+
+table {
+    border-collapse: collapse;  /* セルの線を重ねる */
+    width: 80%;
+}
+
+th,td {
+    padding: 5px 10px;          /* 余白指定 */
+}
+
+th {
+    background-color:#d4a145;  /* 背景色指定 */
+    color:  #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 10;                /* 重なり調整 */
+}
+
+td {
+    background-color:  #fafad2; /* 背景色指定 */
+    padding-left: 25px;         /* 余白指定 */
+    text-align: left;
+}
+
+th::after {
+    content:'';                 /* 空の要素を作る */
+    position:  absolute;        /* 位置指定 */
+    height: 24px;               /* 高さ指定 */
+    width: 24px;                /* 幅指定 */
+    background-color: #d4a145;  /* 背景色指定 */
+    transform:  rotate(45deg);  /* 要素を回転 */
+    top: 5px;                   /* 位置指定 */
+    right: -12px;               /* 位置指定 */
+    z-index:  -1;               /* 重なり調整
+     */
+
+}
+
+tr {
+    border-bottom:  solid #fff; /* 線指定 */
+}

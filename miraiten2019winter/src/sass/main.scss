@@ -1,108 +1,195 @@
-/*PCのスタイル*/
-header nav {
-  margin-right: -16px;
-  nav{
-    ul{
-      display: flex;
-      align-items: center;
-      li{
-        a{
-          color: #fff;
-          text-decoration: none;
-          font-weight: bold;
-          padding: 16px ;
-        }
-      }
-    }
+$breakpoints: (
+  'sm': 'screen and (min-width: 500px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
   }
-}
-#nav_toggle{
-  display: none;
 }
 
-/*メニュー部分*/
-@media screen and (max-width:960px){
-  nav{
-    display: none;
-    position: absolute;
-    top:72px;
-    width: 100%;
-    background: #006598;
-    left: 0;
-  }
-  header {
-    nav{
-      ul{
-        display: block;
-        margin: 0 auto;
-        width: 90%;
-        li{
-          margin: 0 auto;
-          text-align: center;
-          border-bottom: 1px solid #fff;
-          &:last-child{
-            border: none;
-          }
-          a{
-            display: block;
-          }
-        }
-      }
-    }
-  }
-  /*開閉ボタン*/
-  #nav_toggle{
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: 4px;
-    z-index: 100;
-    div{
-      position: relative;
-    }
+.navToggle {
+  display: block;
+  position: fixed;    /* bodyに対しての絶対位置指定 */
+  right: 20px;
+  top: 15px;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 3;
+  background: #fff;
+  text-align: center;
+  &.active{ /*展開時のアニメーション*/
     span{
-      display: block;
-      height: 3px;
-      background: #fff;
-      position:absolute;
-      width: 100%;
-      left: 0;
-      -webkit-transition: 0.5s ease-in-out;
-      -moz-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out;
       &:nth-child(1){
-        top: 0px;
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
       }
-      &:nth-child(2){
-        top: 12px;
-      }
-      &:nth-child(3){
-        top: 24px;
-      }
-    }
-  }
-  /*開閉ボタンopen時*/
-  .open {
-    #nav_toggle{
-      span{
-        &:nth-child(1) {
-          top: 12px;
-          -webkit-transform: rotate(135deg);
-          -moz-transform: rotate(135deg);
-          transform: rotate(135deg);
-        }
-        &:nth-child(2){
-          width: 0;
-          left: 50%;
-        }
-        &:nth-child(3){
-          top: 12px;
-          -webkit-transform: rotate(-135deg);
-          -moz-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-        }
+      &:nth-child(2), &:nth-child(3){
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
       }
     }
   }
+  span{
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px #d4a145;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+    &:nth-child(1){
+      top: 9px;
+    }
+    &:nth-child(2){
+      top: 18px;
+    }
+    &:nth-child(3){
+      top: 27px;
+    }
+    &:nth-child(4){
+      border: none;
+      color: #d4a145;
+      font-size: 9px;
+      font-weight: bold;
+      top: 24px;
+    }
+  }
+}
+.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  transform: translateX(100%);
+  transition: all 0.6s;
+  width: 100%;
+  &.active{
+    transform: translateX(70%);
+  }
+  ul{
+    background: #d4a145;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    z-index: 100;
+    li{
+      font-size: 1.1em;
+      list-style-type: none;
+      padding: 0;
+      width: 30%;
+      border-bottom: 1px dotted #fff;
+      a{
+        display: block;
+        color: #fff;
+        padding: 1em 0;
+      }
+      &:last-child{
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}
+body{
+  background-image: url(../../img/back.png);
+  line-height: 2.0rem;
+}
+footer{
+  margin: auto;
+  text-align: center;
+}
+section{
+  margin-bottom: 30px;
+  .main_width{
+    margin: 0px auto 15px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
+  h2{
+    color: #d4a145;
+  }
+}
+//top
+.top{
+  height: 800px;
+  //slideshow
+  #slide{
+    position:relative;
+    width: 100%;
+    z-index: -1;
+    img{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: 0px;
+      top: 0px;
+      opacity: 0.5;
+    }
+  }
+  .top_head{
+    .miraiten_logo{
+      position: relative;
+      width: 70vmax;
+      top: 30px;
+      left: 5vmin;
+    }
+    .top_text{
+      position: relative;
+      line-height: 2rem;
+      bottom: 0px;
+      left: 5vmin;
+      width: 50%;
+    }
+  }
+}
+//access
+.place dl.pl_text{
+  line-height: 2.0em;
+  width: 50%;
+  margin: 10px auto;
+  @include mp(md){
+    width: 80%;
+  }
+  @include mp(sm){
+    width: 95%;
+  }
+}
+.place dt{
+  position: relative;
+  background-color: #d4a145;
+  line-height: 2.0rem;
+  float: left;
+  clear: left;
+  width: 15vmin;
+  color: #fff;
+  border: 1px solid #d4a145;
+  z-index: 2;//親のz-index次第では擬似要素が隠れてしまう
+  &:after{
+    content: '';
+    position: absolute;
+    height: 3vmin;
+    width: 3vmin;
+    background-color: #d4a145;
+    transform: rotate(45deg);
+    top: 5px;
+    right: -11px;
+    z-index: -1;
+  }
+}
+.place dd{
+  background-color: #fafad2;
+  margin: 0px auto 1px;
 }

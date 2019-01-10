@@ -58,7 +58,7 @@ gulp.task('pug', function() {
 });
 
 //Browser Sync
-gulp.task('browser-sync', () => {
+gulp.task('browser-sync', function () {
   browserSync({
     server: {
       baseDir: paths.html
@@ -68,12 +68,12 @@ gulp.task('browser-sync', () => {
   gulp.watch(paths.html + "**/*.html", ['reload']);
   gulp.watch(paths.css + "**/*.css", ['reload']);
 });
-gulp.task('reload', () => {
+gulp.task('reload', function () {
   browserSync.reload();
 });
 
 //watch
 gulp.task('watch', function () {
-  gulp.watch(paths.scss + '**/*.scss', ['scss']);
+  gulp.watch(paths.scss + '**/*.scss', ['sass']);
   gulp.watch([paths.pug + '**/*.pug', '!' + paths.pug + '**/_*.pug'], ['pug']);
 });

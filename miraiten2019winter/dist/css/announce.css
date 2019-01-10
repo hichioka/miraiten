@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body{
+  font-family: "HGP行書体", "STKaiti","ヒラギノ明朝 Pro W3","ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+.ann_text{
+  margin-left: 7%;
+  line-height: 1.4em;
+  font-size: 1.4em;
+  width: auto;
+}
+.ann_tittle{
+  font-size: 6vw;
+  padding: 7%;
+  line-height: 1.2em;
+}
+.summary, .display, .presen, .place{
+  margin: 8vw auto 5vw;
+}
+.umekiti_img{
+  position: fixed;
+  top: 0px;
+  right: -4%;
+  width: 70vw;
+  z-index: -99;
+}
+.place dl, .display dl{
+  line-height: 1.6em;
+}
+.place dt, .display dt{
+  float: left;
+}
+.place dd{
+  margin-left: 12vw;
+}
+.display dd{
+  margin-left: 15vw;
+}
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-left: 10px;
+  line-height: 2em;
+  text-align: center;
+  background-color: #d4a145;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width:500px)  {
+  .ann_text{
+    margin-left: 5%;
+    line-height: 1.2em;
+    font-size: 1.2em;
+  }
+  .ann_tittle{
+    font-size: 12vw;
+    padding: 4vw 3vw;
+    line-height: 1.2em;
+  }
+}
