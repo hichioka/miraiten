@@ -15,7 +15,7 @@ var browserSync = require("browser-sync");//reflect browser
 var paths = {
   'scss': './src/sass/',
   'css': './dist/css/',
-  'cssTest': './Test/css/',
+  'cssTest': './src/test/css/',
   'pug': './src/pug/',
   'html': './dist/',
   'js': './dist/js/'

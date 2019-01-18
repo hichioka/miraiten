@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+.main_width img{
+  width: 100%;
+}
 .block{
   text-align: center;
   width: 80%;
@@ -64,4 +67,7 @@ th::after {
 
 tr {
     border-bottom:  solid #fff; /* 線指定 */
+}
+footer img{
+  width: 30%;
 }

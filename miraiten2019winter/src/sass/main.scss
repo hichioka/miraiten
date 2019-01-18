@@ -1,16 +1,16 @@
-$breakpoints: (
-  'sm': 'screen and (min-width: 500px)',
-  'md': 'screen and (min-width: 768px)',
-  'lg': 'screen and (min-width: 1000px)',
-  'xl': 'screen and (min-width: 1200px)',
-) !default;
-
-@mixin mq($breakpoint: md) {
-  @media #{map-get($breakpoints, $breakpoint)} {
+//define
+$break-points: (
+sm: 500px,
+md: 768px,
+lg: 1000px,
+xl: 1200px,
+);
+@mixin mq( $key ) {
+  @media ( max-width: map-get( $break-points, $key )) {
     @content;
   }
 }
-
+//hunmenu
 .navToggle {
   display: block;
   position: fixed;    /* bodyに対しての絶対位置指定 */
@@ -19,7 +19,7 @@ $breakpoints: (
   width: 40px;
   height: 50px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
   background: #fff;
   text-align: center;
   &.active{ /*展開時のアニメーション*/
@@ -68,8 +68,9 @@ $breakpoints: (
 }
 .globalMenuSp {
   position: fixed;
-  z-index: 2;
-  background: #fff;
+  z-index: 3;
+  height: 100%;
+  background-color: #d4a145;
   color: #fff;
   text-align: center;
   transform: translateX(100%);
@@ -77,6 +78,9 @@ $breakpoints: (
   width: 100%;
   &.active{
     transform: translateX(70%);
+    @include mq(sm){
+      transform: translateX(30%);
+    }
   }
   ul{
     background: #d4a145;
@@ -90,6 +94,17 @@ $breakpoints: (
       padding: 0;
       width: 30%;
       border-bottom: 1px dotted #fff;
+      @include mq(sm){
+        width: 70%;
+      }
+      .menu_logo{
+        width: 50%;
+        margin: 15px 5px 15px -30px;
+        @include mq(sm){
+          width: 55%;
+          margin: 20px 20px 25px -30px;
+        }
+      }
       a{
         display: block;
         color: #fff;
@@ -111,59 +126,138 @@ footer{
   text-align: center;
 }
 section{
-  margin-bottom: 30px;
-  .main_width{
-    margin: 0px auto 15px;
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-  }
+  margin: 15px auto;
+  padding-top: 25px;
   h2{
     color: #d4a145;
   }
 }
+.main_width{
+  margin: 0px auto 15px;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  @include mq(sm){
+    width: 90%;
+  }
+}
 //top
-.top{
-  height: 800px;
-  //slideshow
-  #slide{
-    position:relative;
-    width: 100%;
-    z-index: -1;
-    img{
-      position: absolute;
+.toppage{
+  .top{
+    .back_img{
       width: 100%;
-      height: auto;
-      left: 0px;
-      top: 0px;
-      opacity: 0.5;
+      float: left;
+    }
+    //slideshow
+    #slide{
+      position: relative;
+      width: 100%;
+      z-index: -1;
+      .slide_img{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 0px;
+        opacity: 0.5;
+      }
+    }
+    .top_head{
+      position: absolute;
+      width: 80%;
+      margin: 0px auto;
+      left: 50px;
+      @include mq(sm){
+        left: 20px;
+      }
+      .miraiten_logo{
+        width: 60%;
+        @include mq(lg){
+          width: 85%;
+          margin-top: 20px;
+        }
+        @include mq(md){
+          margin-top: 15px;
+        }
+      }
+      .top_text{
+        line-height: 1.5rem;
+        width: 50%;
+        @include mq(sm){
+          width: 100%;
+        }
+      }
     }
   }
-  .top_head{
-    .miraiten_logo{
-      position: relative;
-      width: 70vmax;
-      top: 30px;
-      left: 5vmin;
-    }
-    .top_text{
-      position: relative;
-      line-height: 2rem;
-      bottom: 0px;
-      left: 5vmin;
-      width: 50%;
+  .summry{
+    clear: left;
+  }
+  .display{
+    clear: left;
+    .main_width{
+      .top_dis, .top_pr{
+        display: inline-block;
+        width: 43%;
+        margin: 0 3%;
+        @include mq(sm){
+          display: block;
+          width: 100%;
+          margin: 0;
+        }
+        .sub_title{
+          margin-top: 7%;
+        }
+        .dis_img img, .pr_img img{
+          margin: auto;
+          width:50%;
+          @include mq(sm){
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
 //access
+.access{
+  .main_width{
+    .miraiten_logo{
+      width: 100%;
+    }
+  }
+}
+.place{
+  .main_width{
+    width: 40%;
+    @include mq(lg){
+      width: 50%;
+    }
+    @include mq(md){
+      width: 65%;
+    }
+    @include mq(sm){
+      width: 90%;
+    }
+    .img_place1, .img_place2{
+      img{
+        width: 100%;
+      }
+    }
+    .place_box{
+      z-index: 1;
+      width: 60%;
+
+    }
+  }
+}
 .place dl.pl_text{
   line-height: 2.0em;
-  width: 50%;
+  width: 100%;
   margin: 10px auto;
-  @include mp(md){
+  @include mq(md){
     width: 80%;
   }
-  @include mp(sm){
+  @include mq(sm){
     width: 95%;
   }
 }
@@ -177,6 +271,10 @@ section{
   color: #fff;
   border: 1px solid #d4a145;
   z-index: 2;//親のz-index次第では擬似要素が隠れてしまう
+  @include mq(sm){
+    line-height: 1.7rem;
+    width: 21vmin;
+  }
   &:after{
     content: '';
     position: absolute;
@@ -187,6 +285,12 @@ section{
     top: 5px;
     right: -11px;
     z-index: -1;
+    @include mq(sm){
+      height: 5vmin;
+      width: 5vmin;
+      top: 4px;
+      right: -10px;
+    }
   }
 }
 .place dd{

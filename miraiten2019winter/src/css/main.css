@@ -8,7 +8,7 @@
   width: 40px;
   height: 50px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
   background: #fff;
   text-align: center; }
   .navToggle.active {
@@ -52,8 +52,9 @@
 
 .globalMenuSp {
   position: fixed;
-  z-index: 2;
-  background: #fff;
+  z-index: 3;
+  height: 100%;
+  background-color: #d4a145;
   color: #fff;
   text-align: center;
   -webkit-transform: translateX(100%);
@@ -67,6 +68,11 @@
     -webkit-transform: translateX(70%);
     -ms-transform: translateX(70%);
     transform: translateX(70%); }
+    @media (max-width: 500px) {
+      .globalMenuSp.active {
+        -webkit-transform: translateX(30%);
+        -ms-transform: translateX(30%);
+        transform: translateX(30%); } }
   .globalMenuSp ul {
     background: #d4a145;
     margin: 0 auto;
@@ -79,6 +85,16 @@
       padding: 0;
       width: 30%;
       border-bottom: 1px dotted #fff; }
+      @media (max-width: 500px) {
+        .globalMenuSp ul li {
+          width: 70%; } }
+      .globalMenuSp ul li .menu_logo {
+        width: 50%;
+        margin: 15px 5px 15px -30px; }
+        @media (max-width: 500px) {
+          .globalMenuSp ul li .menu_logo {
+            width: 55%;
+            margin: 20px 20px 25px -30px; } }
       .globalMenuSp ul li a {
         display: block;
         color: #fff;
@@ -96,46 +112,115 @@ footer {
   text-align: center; }
 
 section {
-  margin-bottom: 30px; }
-  section .main_width {
-    margin: 0px auto 15px;
-    width: 80%;
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  margin: 15px auto;
+  padding-top: 25px; }
   section h2 {
     color: #d4a145; }
 
-.top {
-  height: 800px; }
-  .top #slide {
-    position: relative;
-    width: 100%;
-    z-index: -1; }
-    .top #slide img {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      left: 0px;
-      top: 0px;
-      opacity: 0.5; }
-  .top .top_head .miraiten_logo {
-    position: relative;
-    width: 70vmax;
-    top: 30px;
-    left: 5vmin; }
-  .top .top_head .top_text {
-    position: relative;
-    line-height: 2rem;
-    bottom: 0px;
-    left: 5vmin;
-    width: 50%; }
+.main_width {
+  margin: 0px auto 15px;
+  width: 80%;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .main_width {
+      width: 90%; } }
 
-.place .pl_text {
+.toppage .top .back_img {
+  width: 100%;
+  float: left; }
+
+.toppage .top #slide {
+  position: relative;
+  width: 100%;
+  z-index: -1; }
+  .toppage .top #slide .slide_img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    opacity: 0.5; }
+
+.toppage .top .top_head {
+  position: absolute;
+  width: 80%;
+  margin: 0px auto;
+  left: 50px; }
+  @media (max-width: 500px) {
+    .toppage .top .top_head {
+      left: 20px; } }
+  .toppage .top .top_head .miraiten_logo {
+    width: 60%; }
+    @media (max-width: 1000px) {
+      .toppage .top .top_head .miraiten_logo {
+        width: 85%;
+        margin-top: 20px; } }
+    @media (max-width: 768px) {
+      .toppage .top .top_head .miraiten_logo {
+        margin-top: 15px; } }
+  .toppage .top .top_head .top_text {
+    line-height: 1.5rem;
+    width: 50%; }
+    @media (max-width: 500px) {
+      .toppage .top .top_head .top_text {
+        width: 100%; } }
+
+.toppage .summry {
+  clear: left; }
+
+.toppage .display {
+  clear: left; }
+  .toppage .display .main_width .top_dis, .toppage .display .main_width .top_pr {
+    display: inline-block;
+    width: 43%;
+    margin: 0 3%; }
+    @media (max-width: 500px) {
+      .toppage .display .main_width .top_dis, .toppage .display .main_width .top_pr {
+        display: block;
+        width: 100%;
+        margin: 0; } }
+    .toppage .display .main_width .top_dis .sub_title, .toppage .display .main_width .top_pr .sub_title {
+      margin-top: 7%; }
+    .toppage .display .main_width .top_dis .dis_img img, .toppage .display .main_width .top_dis .pr_img img, .toppage .display .main_width .top_pr .dis_img img, .toppage .display .main_width .top_pr .pr_img img {
+      margin: auto;
+      width: 50%; }
+      @media (max-width: 500px) {
+        .toppage .display .main_width .top_dis .dis_img img, .toppage .display .main_width .top_dis .pr_img img, .toppage .display .main_width .top_pr .dis_img img, .toppage .display .main_width .top_pr .pr_img img {
+          width: 100%; } }
+
+.access .main_width .miraiten_logo {
+  width: 100%; }
+
+.place .main_width {
+  width: 40%; }
+  @media (max-width: 1000px) {
+    .place .main_width {
+      width: 50%; } }
+  @media (max-width: 768px) {
+    .place .main_width {
+      width: 65%; } }
+  @media (max-width: 500px) {
+    .place .main_width {
+      width: 90%; } }
+  .place .main_width .img_place1 img, .place .main_width .img_place2 img {
+    width: 100%; }
+  .place .main_width .place_box {
+    z-index: 1;
+    width: 60%; }
+
+.place dl.pl_text {
   line-height: 2.0em;
-  width: 50%;
+  width: 100%;
   margin: 10px auto; }
+  @media (max-width: 768px) {
+    .place dl.pl_text {
+      width: 80%; } }
+  @media (max-width: 500px) {
+    .place dl.pl_text {
+      width: 95%; } }
 
 .place dt {
   position: relative;
@@ -147,6 +232,10 @@ section {
   color: #fff;
   border: 1px solid #d4a145;
   z-index: 2; }
+  @media (max-width: 500px) {
+    .place dt {
+      line-height: 1.7rem;
+      width: 21vmin; } }
   .place dt:after {
     content: '';
     position: absolute;
@@ -159,6 +248,12 @@ section {
     top: 5px;
     right: -11px;
     z-index: -1; }
+    @media (max-width: 500px) {
+      .place dt:after {
+        height: 5vmin;
+        width: 5vmin;
+        top: 4px;
+        right: -10px; } }
 
 .place dd {
   background-color: #fafad2;

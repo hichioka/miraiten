@@ -1,21 +1,22 @@
 doctype html
 html(lang="ja")
-  hearder
+  header
     include _head.pug
     
-  body
-    img.miraiten_logo(src="../img/miraitenWin_logo1.png" alt="未来展2019タイトル")
-    section.place
-      div.main_width
-        div.img_place1: img(src="../img/umekiti_suisai.png" alt="梅吉商店")
-        include _umekiti_access.pug
-        div.map: iframe(class="show_map" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.800452403083!2d140.7498183150023!3d41.78951397922931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef4706fb49edb%3A0x73fb5cc3569b70d2!2z44K344Ko44K544K_44OP44Kz44OA44OG77yIU0hBUkUgU1RBUu-8iQ!5e0!3m2!1sja!2sjp!4v1500175507738" width="780" height="400" frameborder="0" allowfullscreen="allowfullscreen")
+  body.access
+    div.main_width
+      img.miraiten_logo(src="https://2019w.miraiten.fun/img/miraitenWin_logo1.png" alt="未来展2019タイトル")
     
     section.place
       div.main_width
-        div.img_place2: img(src="../img/kaiakn.png" alt="弁天町会館")
+        include _umekiti_access.pug
+        div.map: iframe(class="show_map" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.298994938895!2d140.70639358433627!3d41.77221657395786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef3ba9e0cf431%3A0x1c8e7b80dff53be2!2z44CSMDQwLTAwNTEg5YyX5rW36YGT5Ye96aSo5biC5byB5aSp55S677yS77yT4oiS77yVIOmHjuWPo-aiheWQieWVhuW6lw!5e0!3m2!1sja!2sjp!4v1547396805090" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen")
+    
+    section.place
+      div.main_width
         include _bennten_access.pug
-        div.map: iframe(class="show_map" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.800452403083!2d140.7498183150023!3d41.78951397922931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef4706fb49edb%3A0x73fb5cc3569b70d2!2z44K344Ko44K544K_44OP44Kz44OA44OG77yIU0hBUkUgU1RBUu-8iQ!5e0!3m2!1sja!2sjp!4v1500175507738" width="780" height="400" frameborder="0" allowfullscreen="allowfullscreen")
-      
+        div.map: iframe(class="show_map" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.107646208126!2d140.70527229832493!3d41.77095282179428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef3b02392817f%3A0xbee93d9cfe0cc456!2z44CSMDQwLTAwNTEg5YyX5rW36YGT5Ye96aSo5biC5byB5aSp55S677yR77yT4oiS77yRIOW8geWkqeeUuuS8mumkqA!5e0!3m2!1sja!2sjp!4v1547396745962" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen")
   footer
     include _foot.pug
+    
+     //- AIzaSyABEuO9hwvmSsUHFpmxUSAKMp633H6wkgA 

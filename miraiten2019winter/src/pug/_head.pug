@@ -20,21 +20,20 @@ head
 
   script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
   script(type="text/javascript" src="js/main.js")
-
+  
 //- ハンバーガーメニュー 
 //- エリアでフォーカス
-hearder
+header
   div.navToggle
-    span
-    span
-    span
+    - for (var x=0; x<3; x++)
+      span
     span menu
   nav.globalMenuSp
     ul
+      li: img.menu_logo(src="../img/miraitenWin_logo2.png" alt="未来展2019タイトル")
       li: a(href="./index.html") トップページ
       li: a(href="./about.html") 未来展概要
-      li: a(href="./yatai.html") 屋台概要
-      li: a(href="./crowdfunding.html") クラファン概要
+      li: a(href="./work.html") 作品紹介
       li: a(href="./access.html") アクセス
       
       //- 
