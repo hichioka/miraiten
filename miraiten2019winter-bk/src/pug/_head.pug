@@ -1,0 +1,46 @@
+//- headerの記述
+head
+  title 未来展2019冬
+  meta(charset="utf-8")
+  meta(property="og:url" content="https://2019w.miraiten.fun/")
+  meta(property="og:title" content="未来展2019冬" )
+  meta(property="og:type" content="webpage")
+  meta(property="og:description" content="公立はこだて未来大学情報デザインコースの2年生が授業で制作した成果物の展示会のホームページです。" )
+
+  meta(http-equiv="content-type"  content="text/html" charset="utf-8")
+
+  meta(name="viewport" content="width=device-width,initial-scale=1")
+  meta(name="description" content="公立はこだて未来大学情報デザインコースの2年生が授業で制作した成果物の展示会のホームページです。")
+  meta(name="robots" content="noindex,follow")
+  meta(name="format-detection" content="email=no,telephone=no,address=no")
+
+  link(rel="shortcut icon" href="../img/favicon.ico")
+  link(rel="stylesheet" type="text/css" href="css/reboot.css")
+  link(rel="stylesheet" type="text/css" href="css/main.css")
+
+  script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+  script(type="text/javascript" src="js/main.js")
+  
+//- ハンバーガーメニュー 
+//- エリアでフォーカス
+header
+  div.navToggle
+    - for (var x=0; x<3; x++)
+      span
+    span menu
+  nav.globalMenuSp
+    ul
+      li: img.menu_logo(src="../img/miraitenWin_logo2.png" alt="未来展2019タイトル")
+      li: a(href="./index.html") トップページ
+      li: a(href="./about.html") 未来展概要
+      li: a(href="./work.html") 作品紹介
+      li: a(href="./access.html") アクセス
+      
+      //- 
+      //- nav.globalMenuSp 本番用絶対パス
+      //-   ul
+      //-     li: a(href="https://2019w.miraiten.fun/index.html") トップページ
+      //-     li: a(href="https://2019w.miraiten.fun/about.html") 未来展概要
+      //-     li: a(href="https://2019w.miraiten.fun/yatai.html") 屋台概要
+      //-     li: a(href="https://2019w.miraiten.fun/crowdfunding.html") クラファン概要
+      //-     li: a(href="https://2019w.miraiten.fun/access.html") アクセス
