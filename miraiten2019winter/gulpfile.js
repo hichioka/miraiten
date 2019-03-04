@@ -74,6 +74,6 @@ gulp.task('reload', function () {
 
 //watch
 gulp.task('watch', function () {
-  gulp.watch(paths.scss + '**/*.scss', ['sass']);
-  gulp.watch([paths.pug + '**/*.pug', '!' + paths.pug + '**/_*.pug'], ['pug']);
+  gulp.watch(paths.scss + '**/*.scss', gulp.task('sass'));
+  gulp.watch(paths.pug + '**/*.pug', gulp.task('pug'));
 });

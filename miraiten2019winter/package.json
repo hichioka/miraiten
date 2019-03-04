@@ -4,7 +4,18 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "dev": "gulp build --development",
+    "prod": "gulp build --production",
+
+    "sass": "gulp sass",
+    "js": "gulp js",
+    "copy": "gulp copy",
+    "image": "gulp image",
+    "ejs": "gulp ejs"
   },
   "author": "",
   "license": "ISC",
