@@ -8,10 +8,11 @@
 
     "gulp": "gulp",
     "watch": "gulp watch",
+    "sass": "gulp sass",
+    "pug": "gulp pug",
+
     "dev": "gulp build --development",
     "prod": "gulp build --production",
-
-    "sass": "gulp sass",
     "js": "gulp js",
     "copy": "gulp copy",
     "image": "gulp image",
