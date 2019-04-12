@@ -5,12 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "gulp": "gulp",
     "watch": "gulp watch",
     "sass": "gulp sass",
     "pug": "gulp pug",
-
     "dev": "gulp build --development",
     "prod": "gulp build --production",
     "js": "gulp js",
@@ -31,5 +29,8 @@
   },
   "path": {
     "assetsDir": "./assets/"
+  },
+  "dependencies": {
+    "gulp-connect": "^5.7.0"
   }
 }
