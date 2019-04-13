@@ -1,0 +1,605 @@
+@charset "utf-8";
+
+body {
+    color: #333333;
+    font-family: "M PLUS Rounded 1c", sans-serif !important;
+    line-height: 1.8;
+}
+
+.cover {
+    width: 100%;
+    height: 3000px;
+}
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5e80, #ffafbf);
+    }
+    .navbar-brand {
+        margin: 0;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 3.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5em;
+    }
+    .top-text {
+
+    }
+    .top-p {
+
+    }
+    .morning-h2 {
+        font-size: 1rem;
+    }
+    .morning-p {
+        font-size: 0.4rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .h1-set {
+        font-size: 1.2rem;
+    }
+    .sec-1-p {
+        font-size: 0.5rem;
+    }
+    .mat-title {
+        font-size: 0.4rem;
+    }
+    .mat-p {
+        font-size: 0.2rem;
+    }
+    .have-title {
+        margin-top: 1rem;   
+    }
+    .have-des {
+        line-height: 2;
+    }
+    .pian-content {
+        padding: 4rem 0;
+    }
+    .pian-span {
+        font-size: 0.8rem;
+    }
+    .pian-h1 {
+        font-size: 2rem;
+    }
+    .form-content {
+        margin-top: 5rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .brushing-h2 {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 1.5rem;
+    }
+    .return-img {
+        width: 4.5rem;
+    }
+    .return-td {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 576px) and (min-width: 425px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5e80, #ffafbf);
+    }
+    .navbar-brand {
+        margin: 0;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 3.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5em;
+    }
+    .top-text {
+        
+    }
+    .top-p {
+
+    }
+    .morning-h2 {
+        font-size: 1.2rem;
+    }
+    .morning-p {
+        font-size: 0.8rem;
+    }
+    .h1-set {
+        font-size: 1.5rem;
+    }
+    .sec-1-p {
+        font-size: 0.7rem;
+    }
+    .mat-title {
+        font-size: 0.9rem;
+    }
+    .mat-p {
+        font-size: 0.4rem;
+    }
+    .have-title {
+        margin-top: 1rem;   
+    }
+    .have-des {
+        line-height: 2;
+    }
+    .pian-content {
+        padding: 4rem 0;
+    }
+    .pian-span {
+        font-size: 1.3rem;
+    }
+    .pian-h1 {
+        font-size: 2.3rem;
+    }
+    .form-content {
+        margin-top: 5rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .brushing-h2 {
+        margin: 1rem 0;
+        font-size: 1.3rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 1.6rem;
+    }
+    .return-img {
+        width: 6rem;
+    }
+    .return-td {
+        font-size:0.71rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5e80, #ffafbf);
+    }
+    .navbar-brand {
+        margin: 0;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 3.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+    }.top-text {
+        font-size: 3rem;
+    }
+    .top-p {
+        font-size: 1.2rem;
+    }
+    .h1-set {
+        font-size: 2rem;
+    }
+    .sec-1-p {
+        font-size: 1rem;
+    }
+    .mat-title {
+        font-size: 1rem;
+    }
+    .mat-p {
+        font-size: 0.6rem;
+    }
+    .have-title {
+        margin-top: 1rem;   
+    }
+    .have-des {
+        line-height: 2.5;
+    }
+    .pian-content {
+        padding: 4rem 0;
+    }
+    .pian-span {
+        font-size: 1.6rem;
+    }
+    .pian-h1 {
+        font-size: 2.8rem;
+    }
+    .form-content {
+        margin-top: 5rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .brushing-h2 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 1.8rem;
+    }
+    .return-img {
+        width: 8rem;
+    }
+    .return-td {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5075, #ffa3b7);
+    }
+    .navbar-brand {
+        margin-left: 10vw;
+    }
+    .navbar-nav {
+        margin-right: 10vw;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 4.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+    }.top-text {
+        font-size: 4rem;
+    }
+    .top-p {
+        font-size: 1.5rem;
+    }
+    .h1-set {
+        font-size: 2.5rem;
+    }
+    .sec-1-p {
+        font-size: 1.2rem;
+    } 
+    .mat-title {
+        font-size: 1.5rem;
+        opacity: 0.7;
+    }
+    .mat-p {
+        font-size: 0.7rem;
+    }
+    .have-title {  
+    }
+    .have-des {
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+    .pian-content {
+        padding: 4rem 0;
+    }
+    .pian-span {
+        font-size: 1.8rem;
+    }
+    .pian-h1 {
+        font-size: 2.8rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+    .brushing-h2 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 1.8rem;
+    }
+    .return-img {
+        width: 10rem;
+    }
+    .return-td {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5075, #ffa3b7);
+    }
+    .navbar-brand {
+        margin-left: 10vw;
+    }
+    .navbar-nav {
+        margin-right: 10vw;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 4.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+    }.top-text {
+        font-size: 4rem;
+    }
+    .top-p {
+        font-size: 1.5rem;
+    }
+    .h1-set {
+        font-size: 2.5rem;
+    }
+    .sec-1-p {
+        font-size: 1.2rem;
+    } 
+    .mat-title {
+        font-size: 1.5rem;
+        opacity: 0.7;
+    }
+    .mat-p {
+        font-size: 1rem;
+    }
+    .have-title { 
+    }
+    .have-des {
+        line-height: 2.5;
+    }
+    .pian-content {
+        padding: 4rem 0;
+    }
+    .pian-span {
+        font-size: 1.8rem;
+    }
+    .pian-h1 {
+        font-size: 2.8rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .brushing-h2 {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 2.5rem;
+    }
+    .return-img {
+        width: 15rem;
+    }
+    .return-td {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .navbar {
+        background: linear-gradient(3deg, #ff5075, #ffa3b7);
+    }
+    .navbar-brand {
+        margin-left: 10vw;
+    }
+    .navbar-nav {
+        margin-right: 10vw;
+    }
+    .top {
+        padding: 30vh 0;
+    }
+    .top-logo {
+        width: 4.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+    }.top-text {
+        font-size: 4rem;
+    }
+    .top-p {
+        font-size: 1.5rem;
+    }
+    .h1-set {
+        font-size: 2.5rem;
+    }
+    .sec-1-p {
+        font-size: 1.2rem;
+    } 
+    .mat-title {
+        font-size: 2rem;
+        opacity: 0.7;
+    }
+    .have-title {
+    }
+    .have-des {
+        line-height: 3;
+    }
+    .pian-content {
+        padding: 5rem 0;
+    }
+    .pian-span {
+        font-size: 1.8rem;
+    }
+    .pian-h1 {
+        font-size: 2.8rem;
+    }
+    .form-des {
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+    .brushing-h2 {
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+    .brushing-p {
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+    .yen {
+        font-size: 1rem;
+    }
+    .price {
+        font-size: 2.5rem;
+    }
+    .return-img {
+        width: 20rem;
+    }
+    .return-td {
+        font-size: 1.5rem;
+    }
+}
+
+
+.navbar-brand {
+    background: url(img/Logo_01.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 5px;
+    padding-left: 55px;
+    top: 0;
+}
+
+.top {
+    background: url(img/hedder.png) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    top: 0;
+}
+
+.play-btn {
+    width: 6rem;
+}
+
+.play-btn:hover {
+    transition: 0.5s;
+    width: 7rem;
+}
+
+.morning {
+    background: url(img/morning.jpg) center center;
+    background-size: cover;
+    padding: 20% 0;
+}
+
+h5 {
+    position: relative;
+    text-align: center;
+}
+
+h5 span {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 2.5em;
+    padding: 0 1em;
+    background-color: #fff;
+    text-align: left;
+}
+
+h5::before {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #777;
+    margin-left: 10%;
+}
+
+.section {
+    margin-bottom: 6rem;
+}
+
+.material1 {
+    background: url(img/NG_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50% 0;
+}
+
+.material2 {
+    background: url(img/NG_02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50% 0;
+}
+
+.material3 {
+    background: url(img/NG_03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50% 0;
+}
+
+.sec-5 {
+    background-color: #ff5d7f;
+    margin-top: 10rem;
+}
+
+
+.brush-des {
+    padding: 0 2rem;
+    margin: auto 0;
+}
+
+.pro-card {
+    background-color: #f4f4f4;
+    width: auto;
+    height: 250px;
+}
+
+.pro-p {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #333;
+}

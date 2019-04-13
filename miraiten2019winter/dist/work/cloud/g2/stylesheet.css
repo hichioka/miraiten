@@ -1,0 +1,136 @@
+
+/* 全体に関すること */
+li{
+  list-style: none;
+  float: left;
+}
+
+span{
+  color: red;
+  font-size: 20px
+}
+
+/* ヘッダー */
+header{
+  border-bottom: 5px solid brown;
+}
+
+.header{
+  height: 120px;
+}
+
+.header-logo{
+  font-size: 80px;
+  float: left;
+  padding: 0px 40px;
+}
+
+.header-list li{
+  font-size: 30px;
+  padding: 33px 20px;
+  float: left;
+}
+
+/* ここからメイン */
+.main1{
+  border-bottom: 1px solid #778899;
+  padding: 30px;
+}
+/* 商品紹介 */
+.text_align{
+  width: 100%;
+}
+
+.photo{
+  text-align: center;
+  border: 2px solid #778899;
+}
+
+.contents01-logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.contents01-word{
+  text-align: center;
+}
+
+/* 紹介動画 */
+.contents02-logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.movie{
+  text-align: center;
+  border: 2px solid #778899;
+  margin: 30px 37px;
+}
+
+/* 使い方 */
+.main3{
+  border-top: 1px solid #778899;
+  border-bottom: 1px solid #778899;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contents03-logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.contents03-word{
+  text-align: center;
+}
+
+/* 使用例 */
+
+.contents04-logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.contents04-word{
+  text-align: center;
+}
+
+/* 応援する */
+.main5{
+  border-top: 1px solid #778899;
+  padding-top: 30px;
+}
+
+.supports-form-logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.supports-form-word h2{
+  text-align: center;
+}
+
+.bottom{
+  text-align: center;
+}
+
+/* ここからフッター */
+footer{
+  border-top: 5px solid brown;
+}
+
+.footer{
+  height: 90px;
+}
+
+.footer-logo{
+  font-size: 80px;
+  float: left;
+  padding: 0px 40px;
+}
+
+.footer-list li{
+  font-size: 20px;
+  padding: 0px 20px 33px 0px;
+  float: left;
+}

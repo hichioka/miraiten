@@ -1,0 +1,32 @@
+・色
+    濃いピンク   #ff5d7f
+    薄いピンク   #fbe2e2
+
+
+
+・デザイン参考ページ
+    リターン表、特徴まとめ
+    http://photoshopvip.net/77852
+    
+    参考ページデザイン
+    https://lp.color-hair.jp/recruit/
+    https://payke.co.jp/
+
+・ランディングページ集
+    https://lp.webdesignclip.com/
+    https://witharsenal.com/
+
+・歯磨きについて
+    https://tabi-labo.com/265972/good-dentifrice
+    過度に強いブラッシングは、エナメル質を傷つけてしまう
+    エナメル質とは、歯の歯冠の最表層。
+
+<!--
+<h1 class="h3 mb-2 text-dark">歯茎が下がる「歯肉退縮」を防ぐ！</h1>
+<h2 class="h3 mb-5 text-dark"><span class="h4">曲がって短い歯ブラシ</span><span class="h4">Pianissimo/ピアニシモ</span></h2>
+-->
+
+
+
+ペン パームの説明
+ブラシの変化

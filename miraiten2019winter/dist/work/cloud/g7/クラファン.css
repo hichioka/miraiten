@@ -1,0 +1,408 @@
+
+<style type="text/css">
+<div style="white-space:pre;font-family:monospace;">
+
+/*home始まり*/
+
+#slideshow {
+   position: fixed;
+   width:  900px; /* 画像の横幅に合わせて記述 */
+   height: 500px; /* 画像の高さに合わせて記述 */
+}
+#slideshow img {
+   position: absolute;
+   top: 150px;
+   left: 520px;
+   z-index: 8;
+   opacity: 0.0;
+}
+#slideshow img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+#slideshow img.last-active {
+   z-index: 9;
+}
+
+#logo img {
+position: absolute;
+  top: 100px;
+  left:100px;
+}
+body {
+  background-color: #FDE47F;
+}
+.color {
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1500px;
+    height: 140px;
+    background: #B7D968;
+}
+
+.title {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+}
+
+.logo nobr {
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 1000px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.twitter {
+  position: absolute;
+  top: 50px;
+  left: 1235px;
+}
+
+.insta {
+  position: absolute;
+  top: 45px;
+  left: 1290px;
+}
+
+.line {
+  position: absolute;
+  top: 47px;
+  left: 1350px;
+}
+.global-nav {
+  position: absolute;
+  top: 25px;
+  left: 570px;
+}
+
+.global-nav a{
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  top: -24px;
+  text-align: center;
+}
+
+.video {
+  position: absolute;
+  top: 570px;
+  left: 205px;
+}
+
+.copy {
+  position: absolute;
+  top: 225px;
+  left: 50px;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: 'arial unicode ms';
+}
+
+.char {
+  position: absolute;
+  top: 210px;
+  left: 75px;
+}
+
+.sien {
+  background-color: white;
+  position: absolute;
+  top: 680px;
+  left: 515px;
+}
+
+.sien a{
+font-size: 25px;
+text-align: center;
+}
+
+.sien button {
+  position: absolute;
+  top: 15px;
+  left:550px;
+  width: 300px;
+  height: 50px;
+}
+/*home終わり*/
+
+/* intro始まり*/
+
+.ptitle{
+  position: absolute;
+  top: 160px;
+  left: 90px;
+  color: red;
+}
+
+.ptitle h4{
+  position: absolute;
+  top: 48px;
+  left: 10px;
+
+}
+
+.stitle1 {
+  font-size: 35px;
+  background-color: #B576AD;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+
+.two{
+  position: absolute;
+  top:420px;
+  left: 550px;
+}
+
+.exv nobr{
+  font-size: 30px;
+  position: absolute;
+  top:470px;
+  left: 150px;
+}
+
+
+.kisekae {
+position: absolute;
+top:600px;
+left:100px;
+width:800px;
+height:400px;
+overflow: hidden;
+}
+
+.ktitle{
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top:30px;
+  left: 50px;
+}
+
+.kbun {
+  position: absolute;
+  top:100px;
+  left:55px;
+}
+
+.huku{
+  position: absolute;
+  top:-40px;
+  left: 337px;
+  width: 378px;
+  height: 167px;
+}
+
+.rap {
+position: absolute;
+top:900px;
+left:100px;
+width:800px;
+height:400px;
+overflow: hidden;
+}
+
+.rtitle{
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top:30px;
+  left: 50px;
+}
+
+.rbun {
+  position: absolute;
+  top:100px;
+  left:55px;
+}
+
+.ra {
+  position: absolute;
+  top:-70px;
+  left: 380px;
+  width: 334px;
+  height: 188px;
+}
+
+.nikki {
+position: absolute;
+top:1200px;
+left:100px;
+width:800px;
+height:400px;
+overflow: hidden;
+
+}
+
+.ntitle {
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top:30px;
+  left: 50px;
+}
+
+.nbun {
+  position: absolute;
+  top:100px;
+  left:55px;
+}
+
+.ni {
+  position: absolute;
+  top:-80px;
+  left: 380px;
+  width: 281px;
+  height: 200px;
+}
+
+.gakusyu {
+position: absolute;
+top: 1500px;
+left:100px;
+width:800px;
+height:400px;
+overflow: hidden;
+}
+
+.gtitle {
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top:30px;
+  left: 50px;
+}
+
+.gbun {
+  position: absolute;
+  top:100px;
+  left:55px;
+}
+
+.g {
+  position: absolute;
+  top:-60px;
+  left: 390px;
+  width: 252px;
+  height: 164px;
+}
+
+/* intro終わり*/
+
+
+/* intro始まり*/
+
+.guidetitle{
+  position: absolute;
+  top: 160px;
+  left: 10px;
+  color: red;
+}
+
+.guidetitle h4{
+  position: absolute;
+  top: 48px;
+  left: 10px;
+
+}
+
+.ex1{
+  position: absolute;
+  top:300px;
+  left: 200px;
+}
+
+.ex2{
+  position: absolute;
+  top:500px;
+  left: 400px;
+}
+
+.ex3{
+  position: absolute;
+  top:700px;
+  left: 400px;
+}
+
+
+/* contact始まり*/
+
+.color2 {
+  position: absolute;
+    top: 186px;
+    left: 0px;
+    width: 1500px;
+    height: 70px;
+    background: #84493A;
+}
+
+.ititle {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top:200px;
+  left: 30px;
+}
+
+.form{
+  font-size: 30px;
+  position: absolute;
+  top: 300px;
+  left:200px;
+}
+
+textarea {
+font-size: 20px;
+width: 400px;
+height: 5em;
+}
+
+.g1 a{
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.ex1 {
+  position: absolute;
+  top: 350px;
+  left: 80px;
+}
+
+.g2 a{
+  position: absolute;
+  top: 600px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.ex2 {
+  position: absolute;
+  top: 650px;
+  left: 80px;
+}
+
+.g3 a{
+  position: absolute;
+  top: 800px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.ex3 {
+  position: absolute;
+  top: 850px;
+  left: 80px;
+}
+
+   </style>
