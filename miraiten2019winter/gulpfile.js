@@ -62,25 +62,18 @@ gulp.task('browser-sync', function () {
       baseDir: paths.html
     }
   });
+  gulp.watch(paths.js + "**/*.js", gulp.task('bs-reload'));
+  gulp.watch(paths.html + "*.html", gulp.task('bs-reload'));
+  gulp.watch(paths.css + "*.css", gulp.task('bs-reload'));
 });
-gulp.task('bs-reload', function () {
+gulp.task('bs-reload', function (done) {
   browserSync.reload();
+  done();
 });
-
-gulp.task('connect', function() {
-  connect.server({
-    root: './',
-    livereload: true
-  });
-});
-//watch - pug&sassの自動コンパイルタスク
+//watch - pug&sassの自動コンパイル
 gulp.task('watch', function () {
   gulp.watch(paths.scss + '**/*.scss', gulp.task('sass'));
   gulp.watch(paths.pug + '**/*.pug', gulp.task('pug'));
 });
 
-gulp.task('default', gulp.series( gulp.parallel('watch','connect','browser-sync'), function(){
-  gulp.watch(paths.js + "**/*.js", gulp.task('bs-reload'));
-  gulp.watch(paths.html + "*.html", gulp.task('bs-reload'));
-  gulp.watch(paths.css + "*.css", gulp.task('bs-reload'));
-}));
+gulp.task('default', gulp.series( gulp.parallel('watch','browser-sync')));
