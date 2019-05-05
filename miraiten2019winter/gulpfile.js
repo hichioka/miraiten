@@ -49,7 +49,7 @@ gulp.task('sass-test', function () {
 });
 //pugコンパイルタスク
 gulp.task('pug', function() {
-  return gulp.src([paths.pug + '**/*.pug', '!' + paths.pug + '**/_*.pug'])
+  return gulp.src([paths.pug + '**/*.pug', '!' + paths.pug + 'include/**/_*.pug'])
     .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
     .pipe(pug(pugOptions))
     .pipe(gulp.dest(paths.html));
@@ -59,7 +59,8 @@ gulp.task('pug', function() {
 gulp.task('browser-sync', function () {
   browserSync({
     server: {
-      baseDir: paths.html
+      baseDir: paths.html,
+      index  : "index.html"
     }
   });
   gulp.watch(paths.js + "**/*.js", gulp.task('bs-reload'));

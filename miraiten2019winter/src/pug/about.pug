@@ -1,6 +1,7 @@
 doctype html
 html(lang="ja")
-  include _head.pug
+  include include/_layout.pug
+  include include/_head.pug
 
   body
     div.main_width
@@ -10,13 +11,13 @@ html(lang="ja")
         p はこだて未来展は、公立はこだて未来大学の情報デザインコース2年生の課題作品を発表する場です。今回の展示会では情報表現基礎3で作成した「IT×道南杉でパフォーマンスを行う作品」と情報デザイン2で作成した「健康に関する作品でクラウドファンディング」の2種類を展示します。
     div.block
       sub_title 展示会概要
-        table(align="center")  
+        table(align="center")
           tbody
             mixin article(name, content)
               tr
                 th= name
                 td= content
-                
+
             +article('イベント名', 'はこだて未来展2019冬')
             +article('会場', '旧野口梅吉商店')
             +article('会場住所', '北海道函館市弁天町23-5')
@@ -25,14 +26,14 @@ html(lang="ja")
             +article('主催', '公立はこだて未来大学情報デザインコース')
             +article('後援', '渡島総合振興局/株式会社ハルキ')
 
-      div.block
-        sub_title 公開プレゼンテーション
-        h3 1月20日(日)13時～16時　弁天町会館
-        p 全ての作品について、製作者たちがプレゼンテーションを行います。作品のコンセプトや制作意図、工夫点などを紹介します。ぜひお越しください。
+    div.block
+      sub_title 公開プレゼンテーション
+      h3 1月20日(日)13時～16時　弁天町会館
+      p 全ての作品について、製作者たちがプレゼンテーションを行います。作品のコンセプトや制作意図、工夫点などを紹介します。ぜひお越しください。
 
-      div.block
-        sub_title 展示略図
-        img.under(src="./img/madori.png")
-  
+    div.block
+      sub_title 展示略図
+      img.under(src="./img/madori.png")
+
   footer
-    include _foot.pug
+    include include/_foot.pug

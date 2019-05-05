@@ -1,6 +1,7 @@
 doctype html
 html(lang="ja")
-  include _head.pug
+  include include/_layout.pug
+  include include/_head.pug
   body
     section.title
       h1 情報表現基礎3
@@ -14,7 +15,7 @@ html(lang="ja")
         p 作品名 制作チーム名
         p 作品説明（コンセプト）
         //- ポップアップで紹介動画を流す＋軽い説明
-    
+
   footer
-    include _foot.pug
-    
+    include include/_foot.pug
+
